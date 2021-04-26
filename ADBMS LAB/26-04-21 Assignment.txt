@@ -1,0 +1,35 @@
+
+create table Deposit (actno varchar (5) CHECK (actno like 'D%') primary key,cname references Customer (cname),bname references Branch (bname), amount number (8,2) not null, adate date);
+create table Branch (bname varchar (20) primary key,city varchar (30) CHECK (city IN ('NAGPUR', 'DELHI','BANGALORE', 'BOMBAY')));
+create table Customer (cname varchar (15) primary key,city varcharr (20) not null);
+create table Borrow (loanno varchar (8) CHECK (loanno like 'L%') primary key,cname references Customer (cname),bname references Branch (bname), amount number (8,2) notnull);
+
+insert into Branch Values ('VRCE', 'NAGPUR');
+insert into Branch Values ('AJNI', 'NAGPUR');
+insert into Branch Values ('KAROLBAGH', 'DELHI');
+insert into Branch Values ('CHANDNI', 'DELHI');
+insert into Branch Values ('DHARAMPETH', 'NAGPUR');
+insert into Branch Values ('MG ROAD', 'BANGALORE');
+insert into Branch Values ('ANDHERI	', 'BOMBAY');
+insert into Branch Values ('NEHRU PALACE', 'DELHI');
+insert into Branch Values ('POWAI', 'BOMBAY');
+
+
+
+insert into Customer Values ('ANIL', 'CALCUTTA');
+insert into Customer Values ('SUNIL', 'DELHI');
+insert into Customer Values ('MEHUL', 'BARODA');
+insert into Customer Values ('MANDAR', 'PATNA');
+insert into Customer Values ('MADHURI', 'NAGPUR');
+insert into Customer Values ('PRAMOD', 'NAGPUR');
+insert into Customer Values ('SANDIP', 'SURAT');
+insert into Customer Values ('SHIVANI', 'BOMBAY');
+insert into Customer Values ('KRANTI', 'BOMBAY');
+insert into Customer Values ('NAREN', 'BOMBAY');
+
+
+ select * from Customer;
+
+ select * from branch;
+
+
