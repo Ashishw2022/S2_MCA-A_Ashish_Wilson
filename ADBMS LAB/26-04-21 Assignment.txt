@@ -14,7 +14,23 @@ insert into Branch Values ('ANDHERI	', 'BOMBAY');
 insert into Branch Values ('NEHRU PALACE', 'DELHI');
 insert into Branch Values ('POWAI', 'BOMBAY');
 
+insert into Deposit Values ('D100', 'ANIL', 'VRCE', 1000.00, '1-MAR-95');
+insert into Deposit Values ('D101', 'SUNIL', 'ANJNI', 500.00, '4-JAN-96');
+insert into Deposit Values ('D102', 'MEHUL', 'KAROLBAGH', 3500.00,'17-NOV-95');
+insert into Deposit Values ('D105', 'PRAMOD', 'MG ROAD', 3000.00,'27-MAR-96');
+insert into Deposit Values ('D104', 'MADHURI', 'CHANDNI', 1200.00,'17-DEC-95');
+insert into Deposit Values ('D106', 'SANDIP', 'ANDHERI', 2000.00,'31-MAR-96');
+insert into Deposit Values ('D107', 'SHIVANI', 'VIRAR', 1000.00, '5-SEP-95');
+insert into Deposit Values ('D108', 'KRANTI', 'NEHRU PLACE', 5000.00,'2-JUL-95');
+insert into Deposit Values ('D109', 'MINU', 'POWAI', 7000.00, '10-AUG-95');
 
+
+insert into Borrow Values ('L201', 'ANIL', 'VRCE', 1000.00);
+insert into Borrow Values ('L206', 'MEHUL', 'AJNI', 5000.00);
+insert into Borrow Values ('L311', 'SUNIL', 'DHARAMPETH', 3000.00);
+insert into Borrow Values ('L321', 'MADHURI', 'ANDHERI', 2000.00);
+insert into Borrow Values ('L371', 'PRAMOD', 'VIRAR', 8000.00);
+insert into Borrow Values ('L481', 'KRANTI', 'NEHRU PLACE', 3000.00);
 
 insert into Customer Values ('ANIL', 'CALCUTTA');
 insert into Customer Values ('SUNIL', 'DELHI');
